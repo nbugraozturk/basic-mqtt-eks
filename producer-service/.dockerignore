@@ -1,0 +1,11 @@
+target/
+.git
+.gitignore
+README.md
+
+mvnw
+mvnw.cmd
+mvnw.bat
+mvnw.sh
+mvnw.exe
+mvnw.exe.bat

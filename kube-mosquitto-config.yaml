@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kube-mosquitto-config
+data:
+  mosquitto.conf: |
+    # Mosquitto configuration file
+    listener 1884
+    allow_anonymous true
+
+

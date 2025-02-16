@@ -1,0 +1,115 @@
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Docker
+.docker/
+
+# Kubernetes
+kubeconfig
+
+# Build outputs
+dist/
+build/
+*.tgz
+
+### Java & Spring Boot ###
+# Help documentation
+**/HELP.md
+consumer-service/HELP.md
+producer-service/HELP.md
+
+# Maven build directories
+**/target/
+consumer-service/target/
+producer-service/target/
+
+# Maven Wrapper
+!consumer-service/.mvn/wrapper/maven-wrapper.jar
+!producer-service/.mvn/wrapper/maven-wrapper.jar
+
+# Maven target exceptions
+!consumer-service/src/main/**/target/
+!consumer-service/src/test/**/target/
+!producer-service/src/main/**/target/
+!producer-service/src/test/**/target/
+
+# STS
+**/.apt_generated
+**/.classpath
+**/.factorypath
+**/.project
+**/.settings
+**/.springBeans
+**/.sts4-cache
+consumer-service/.apt_generated
+consumer-service/.classpath
+consumer-service/.factorypath
+consumer-service/.project
+consumer-service/.settings
+consumer-service/.springBeans
+consumer-service/.sts4-cache
+producer-service/.apt_generated
+producer-service/.classpath
+producer-service/.factorypath
+producer-service/.project
+producer-service/.settings
+producer-service/.springBeans
+producer-service/.sts4-cache
+
+# IntelliJ IDEA
+**/*.iws
+**/*.iml
+**/*.ipr
+consumer-service/*.iws
+consumer-service/*.iml
+consumer-service/*.ipr
+producer-service/*.iws
+producer-service/*.iml
+producer-service/*.ipr
+
+# NetBeans
+**/nbproject/private/
+**/nbbuild/
+**/dist/
+**/nbdist/
+**/.nb-gradle/
+consumer-service/nbproject/private/
+consumer-service/nbbuild/
+consumer-service/dist/
+consumer-service/nbdist/
+consumer-service/.nb-gradle/
+producer-service/nbproject/private/
+producer-service/nbbuild/
+producer-service/dist/
+producer-service/nbdist/
+producer-service/.nb-gradle/
+
+# Build exceptions
+!consumer-service/src/main/**/build/
+!consumer-service/src/test/**/build/
+!producer-service/src/main/**/build/
+!producer-service/src/test/**/build/ 

@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+
+  consumer-service:
+    build:
+      context: ./consumer-service/.
+      dockerfile: Dockerfile
+    ports:
+        - "8080:8080"
+    environment:
+        - SPRING_PROFILES_ACTIVE=prod
+        
+  producer-service:
+    build:
+      context: ./producer-service/.
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - mqtt-broker
+
+  mqtt-broker:
+    image: eclipse-mosquitto:2.0
+    ports:
+      - "1884:1884"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
